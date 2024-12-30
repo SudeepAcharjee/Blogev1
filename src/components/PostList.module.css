@@ -1,0 +1,90 @@
+/* post filter */
+.filter {
+  display: flex;
+  gap: 8px;
+  margin: 0 auto;
+  max-width: 680px;
+  font-style: 16px;
+  color: var(--color-text-level0);
+  padding: 48px 20px 0px 20px;
+}
+
+.filterLeft,
+.filterRight {
+  display: flex;
+  gap: 8px;
+}
+
+.filterItem {
+  cursor: pointer;
+  box-sizing: content-box;
+  padding: 2px 5px;
+  width: fit-content;
+  user-select: none;
+  color: var(--color-text);
+}
+
+.filterItem.active {
+  color: var(--color-active);
+  font-weight: 600;
+  background-color: var(--color-light-bg);
+  border-radius: 5px;
+}
+
+.divider {
+  width: 1.5px;
+  height: 20px;
+  background-color: var(--color-border-light);
+}
+
+/* post list */
+.postList {
+  padding: 20px;
+  text-align: left;
+  line-height: 24px;
+}
+
+.noPosts {
+  width: 100%;
+  margin: 40px 0px;
+  padding: 100px 0px;
+  text-align: center;
+  font-weight: 500;
+  color: var(--color-text-level0);
+  border: 1px solid var(--color-border-light);
+  border-radius: 20px;
+}
+
+.noPosts p {
+  color: var(--color-text);
+}
+
+.noPosts a {
+  background-color: var(--color-light-bg);
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: var(--color-text-level0);
+  margin-top: 30px;
+  display: inline-block;
+}
+
+.noPosts a:hover {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+}
+
+@media (max-width: 500px) {
+  .filter {
+    flex-direction: column;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  .postList {
+    padding: 0px;
+  }
+}

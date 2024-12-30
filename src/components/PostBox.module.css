@@ -1,0 +1,39 @@
+.container {
+  padding: 24px 0px;
+  border-top: 1px solid var(--color-light-bg);
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 14px 0px;
+  color: var(--color-text);
+}
+
+.content {
+  color: var(--color-text-level1);
+  font-size: 16px;
+}
+
+.utilBox {
+  display: flex;
+  gap: 8px;
+  flex-direction: row-reverse;
+  font-size: 14px;
+}
+
+.button {
+  cursor: pointer;
+  color: var(--color-text-level0);
+}
+
+.button:hover,
+.button:focus {
+  color: var(--color-active);
+}
+
+@media (max-width: 500px) {
+  .button {
+    font-size: 12px;
+  }
+}

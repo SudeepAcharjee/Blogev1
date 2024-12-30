@@ -1,0 +1,53 @@
+.profileBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  text-align: left;
+  line-height: 24px;
+  padding: 40px 0px;
+}
+
+.flexBox.Large {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.avatar {
+  width: 72px;
+  height: 72px;
+  background-color: var(--color-light-bg);
+  border-radius: 56%;
+}
+
+.email {
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.username {
+  font-size: 16px;
+  padding-top: 4px;
+  color: var(--color-text);
+}
+
+.logoutBtn {
+  color: var(--color-text-level0);
+  font-size: 14px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.logoutBtn:hover,
+.logoutBtn:focus {
+  color: var(--color-active);
+}
+
+@media (max-width: 500px) {
+  .avatar {
+    width: 60px;
+    height: 60px;
+  }
+}

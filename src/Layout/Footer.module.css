@@ -1,0 +1,30 @@
+/* footer */
+.footer {
+  background-color: var(--color-light-bg);
+  min-height: 40px;
+  padding: 30px 40px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.footer a {
+  color: var(--color-text-level0);
+}
+
+.footer a:focus,
+.footer a:hover {
+  color: var(--color-active);
+}
+
+.themeBtn {
+  cursor: pointer;
+  position: absolute;
+  right: 40px;
+}
